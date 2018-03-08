@@ -76,9 +76,7 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             R.id.list_settings -> {
 
             }
-            R.id.list_settings-> {
 
-            }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
