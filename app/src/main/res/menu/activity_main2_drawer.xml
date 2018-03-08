@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/list_listings"
+            android:icon="@drawable/ic_list_black_"
+            android:title="Listings" />
+        <item
+            android:id="@+id/list_Job"
+            android:icon="@drawable/ic_search_black"
+            android:title="Job Search" />
+        <item
+            android:id="@+id/list_deliveries"
+            android:icon="@drawable/ic_deliveries"
+            android:title="Deliveries" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/list_account"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="My Account" />
+            <item
+                android:id="@+id/list_reviews"
+                android:icon="@drawable/ic_review_24dp"
+                android:title="Reviews" />
+            <item
+                android:id="@+id/list_settings"
+                android:icon="@drawable/ic_settings_black"
+                android:title="Settings" />
+            <item
+                android:id="@+id/list_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
