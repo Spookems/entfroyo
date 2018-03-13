@@ -1,5 +1,6 @@
 package uk.ac.tees.com2060.froyo.ent_froyo
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -8,20 +9,34 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.app_bar_main2.*
 
-class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
+    {
+        fun loginButton(view: View)
+        {
+        val login = findViewById<View>(R.id.login_form)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
-        setSupportActionBar(toolbar)
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        }
 
-        fab.setOnClickListener { view ->
+        override fun onCreate(savedInstanceState: Bundle?)
+        {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main2)
+
+            setSupportActionBar(toolbar)
+
+            fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-        }
+            }
+
+
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -30,6 +45,11 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         nav_view.setNavigationItemSelectedListener(this)
     }
+
+
+
+
+
 
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
@@ -57,11 +77,14 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+
         when (item.itemId) {
             R.id.list_listings -> {
                 // Handle the camera action
             }
-            R.id.list_Job-> {
+            R.id.list_Job->
+            {
+
 
             }
             R.id.list_deliveries -> {
@@ -70,7 +93,9 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             R.id.list_account -> {
 
             }
-            R.id.list_reviews -> {
+            R.id.list_reviews ->
+            {
+
 
             }
             R.id.list_settings -> {
@@ -82,4 +107,10 @@ class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
+
+
+
+
+
+
 }
