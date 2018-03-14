@@ -14,7 +14,7 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.app_bar_main2.*
 
-class Main2Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
     {
         fun loginButton(view: View)
         {
