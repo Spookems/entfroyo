@@ -26,9 +26,10 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:parentActivityName=".HomeActivity"
-            android:label="@string/title_activity_login" />
-
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".Listings_Activity" />
+        <activity android:name=".listings_data"></activity>
     </application>
 
 </manifest>
