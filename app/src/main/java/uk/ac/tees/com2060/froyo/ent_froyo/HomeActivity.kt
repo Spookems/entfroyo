@@ -11,11 +11,19 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ListView
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.app_bar_main2.*
+import uk.ac.tees.com2060.froyo.ent_froyo.Listings_Activity
+
+
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
     {
+        var dataModels: ArrayList<listings_data>? = null
+        var listView: ListView? = null
+        private val adapter: listings_data? = null
+
         fun loginButton(view: View)
         {
         val login = findViewById<View>(R.id.login_form)
@@ -31,11 +39,12 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             setSupportActionBar(toolbar)
 
+
             fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-            }
 
+            }
 
 
         val toggle = ActionBarDrawerToggle(
@@ -90,7 +99,9 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.list_deliveries -> {
 
             }
-            R.id.list_account -> {
+            R.id.list_account ->
+            {
+
 
             }
             R.id.list_reviews ->
@@ -98,7 +109,9 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
             }
-            R.id.list_settings -> {
+            R.id.list_settings ->
+            {
+
 
             }
 
