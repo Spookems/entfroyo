@@ -29,6 +29,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.ActionCodeSettings;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +40,20 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+    ActionCodeSettings actionCodeSettings =
+            ActionCodeSettings.newBuilder()
+                    // URL you want to redirect back to. The domain (www.example.com) for this
+                    // URL must be whitelisted in the Firebase Console.
+                    .setUrl("https://www.example.com/finishSignUp?cartId=1234")
+                    // This must be true
+                    .setHandleCodeInApp(true)
+                    .setIOSBundleId("com.example.ios")
+                    .setAndroidPackageName(
+                            "com.example.android",
+                            true, /* installIfNotAvailable */
+                            "12"    /* minimumVersion */)
+                    .build();
+    
 
     /**
      * Id to identity READ_CONTACTS permission request.
