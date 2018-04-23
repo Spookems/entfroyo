@@ -28,14 +28,8 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:parentActivityName=".HomeActivity" />
-        <activity
-            android:name=".Listings_Activity"
-            android:label="@string/listings_page"
-            android:parentActivityName=".HomeActivity"
-
-            />
-
-
+        <activity android:name=".Listings_Activity" />
+        <activity android:name=".listings_data"></activity>
     </application>
 
 </manifest>
