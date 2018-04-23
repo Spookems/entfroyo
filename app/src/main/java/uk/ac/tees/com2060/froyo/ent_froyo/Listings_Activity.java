@@ -18,16 +18,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-class Listings_Activity extends ArrayAdapter<listings_data> implements View.OnClickListener
-{
+public class Listings_Activity extends ArrayAdapter<listings_data> implements View.OnClickListener {
 
     private ArrayList<listings_data> dataSet;
     Context mContext;
 
 
 
-    public Listings_Activity(ArrayList<listings_data> data, Context context)
-    {
+    public Listings_Activity(ArrayList<listings_data> data, Context context) {
         super(context, R.layout.activity_listings_, data);
         this.dataSet = data;
         this.mContext=context;
