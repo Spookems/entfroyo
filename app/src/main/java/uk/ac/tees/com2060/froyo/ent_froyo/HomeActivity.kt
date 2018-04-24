@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.AdapterView
 import android.widget.Button
 import android.widget.ListView
 import kotlinx.android.synthetic.main.activity_main2.*
@@ -44,6 +45,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
 
+
             }
 
 
@@ -53,7 +55,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
-    }
+        }
 
 
 
@@ -80,6 +82,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
             R.id.action_settings -> return true
+
             else -> return super.onOptionsItemSelected(item)
         }
     }
@@ -88,20 +91,27 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
 
         when (item.itemId) {
-            R.id.list_listings -> {
-                // Handle the camera action
+            R.id.list_listings ->
+            {
+                val intent = Intent(this, Listings_Activity::class.java)
+                startActivity(intent)
+
             }
             R.id.list_Job->
             {
 
 
             }
-            R.id.list_deliveries -> {
+            R.id.list_deliveries ->
+            {
+
+
 
             }
             R.id.list_account ->
             {
-
+                val intent=Intent(this, LoginActivity::class.java)
+                startActivity(intent)
 
             }
             R.id.list_reviews ->
@@ -114,7 +124,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
             }
-
+            else -> {}
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
