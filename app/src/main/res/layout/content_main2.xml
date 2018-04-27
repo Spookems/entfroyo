@@ -10,7 +10,17 @@
 
     <android.support.design.internal.ScrimInsetsFrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp"
+        tools:ignore="MissingConstraints">
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/action_sign_in_short"
+            android:visibility="visible" />
     </android.support.design.internal.ScrimInsetsFrameLayout>
 </android.support.constraint.ConstraintLayout>

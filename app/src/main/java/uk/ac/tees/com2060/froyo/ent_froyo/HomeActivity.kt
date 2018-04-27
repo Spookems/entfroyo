@@ -1,6 +1,7 @@
 package uk.ac.tees.com2060.froyo.ent_froyo
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -13,25 +14,36 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.ListView
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.app_bar_main2.*
 import uk.ac.tees.com2060.froyo.ent_froyo.Listings_Activity
+import com.google.firebase.database.FirebaseDatabase
+
 
 
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
     {
-        var dataModels: ArrayList<listings_data>? = null
+
+
+
         var listView: ListView? = null
         private val adapter: listings_data? = null
 
-        fun loginButton(view: View)
+        fun onClick(view: View)
         {
-        val login = findViewById<View>(R.id.login_form)
+            val intent=Intent(this,LoginActivity::class.java)
+            startActivity(intent);
 
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
-        }
+
+            }
+
+
+
+
+
+
 
         override fun onCreate(savedInstanceState: Bundle?)
         {
