@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "750277973111",
+    "firebase_url": "https://entfroyo.firebaseio.com",
+    "project_id": "entfroyo",
+    "storage_bucket": "entfroyo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750277973111:android:939331f04de27f9e",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.com2060.froyo.ent_froyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750277973111-re0e3jjj1nm564garho0pims21hicr6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uk.ac.tees.com2060.froyo.ent_froyo",
+            "certificate_hash": "4c94116183e0d3ea0b1c905e6bb2ce26102f2947"
+          }
+        },
+        {
+          "client_id": "750277973111-9go86208e31f13gnn1pr5m4rh842fqoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3mNo0xzISf__KjACr2MFx_aobti3tfSg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750277973111-9go86208e31f13gnn1pr5m4rh842fqoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
