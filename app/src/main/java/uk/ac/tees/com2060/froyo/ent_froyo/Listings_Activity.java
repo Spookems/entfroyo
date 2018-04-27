@@ -31,6 +31,7 @@ public class Listings_Activity extends ArrayAdapter<listings_data> implements Vi
         this.mContext=context;
 
     }
+
     @Override
     public void onClick(View v)
     {

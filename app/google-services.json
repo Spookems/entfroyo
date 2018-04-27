@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "192837337946",
+    "firebase_url": "https://entfroyotest.firebaseio.com",
+    "project_id": "entfroyotest",
+    "storage_bucket": "entfroyotest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192837337946:android:939331f04de27f9e",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.com2060.froyo.ent_froyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192837337946-79j9c7c191s25cii8svbdg0kiq62gauk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAhlCOvEwzLhiBZdONAFK6Kxr0Q3GDeB0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
