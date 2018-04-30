@@ -26,6 +26,9 @@ import com.google.firebase.database.FirebaseDatabase
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener
     {
 
+        internal var database = FirebaseDatabase.getInstance()
+        internal var myRef = database.getReference("message")
+
 
 
         var listView: ListView? = null
